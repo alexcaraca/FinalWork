@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Final Work</title>
+  <meta charset="utf-8">
+  <meta name="description" content="My Final Work">
+  <meta name="author" content="LM">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>My Final Work</h1>
+    <h2></h2>
+    <p>LM<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Overview</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This is a deliverable for the course Developing Data Products. A course that is a part of the Coursera Data Science Specialization.</p>
+
+<p>The app developed for this course is available on: <a href="https://alexcaraca.shinyapps.io/finalwork/">https://alexcaraca.shinyapps.io/finalwork/</a>.</p>
+
+<p>The code source is available on: <a href="https://github.com/alexcaraca/FinalWork">https://github.com/alexcaraca/FinalWork</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>App detail</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The site provides a tools for select the expected price for a diamond according their carat size, cut and colour.  </p>
+
+<p>We required you provide your desired carat size, the cut and the colour  </p>
+
+<p>The result contains a plot and the expected result and uses the diamond dataset from [R].  </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Diamond Detail</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The data used is the diamond dataset (from the ggplot2 library). Let&#39;s look at a summary:</p>
+
+<pre><code class="r">summary(diamonds$carat)
+</code></pre>
+
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##  0.2000  0.4000  0.7000  0.7979  1.0400  5.0100
+</code></pre>
+
+<pre><code class="r">summary(diamonds$cut)
+</code></pre>
+
+<pre><code>##      Fair      Good Very Good   Premium     Ideal 
+##      1610      4906     12082     13791     21551
+</code></pre>
+
+<pre><code class="r">summary(diamonds$color)
+</code></pre>
+
+<pre><code>##     D     E     F     G     H     I     J 
+##  6775  9797  9542 11292  8304  5422  2808
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Plotting</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>There is a clear relation between carat size and price:</p>
+
+<pre><code class="r">print(g)
+</code></pre>
+
+<p><img src="figure/unnamed-chunk-4-1.png" alt="plot of chunk unnamed-chunk-4">
+--- .class #id   </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Overview'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='App detail'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Diamond Detail'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Plotting'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
